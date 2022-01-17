@@ -26,3 +26,23 @@
   height: 15px;
   margin-left: 10px;
 }
+@media (max-width: 600px) {
+  .title {
+    display: none;
+  }
+  .icons {
+    top: 10px;
+    right: 10px;
+  }
+  .icon {
+    height: 12px;
+  }
+  .logo {
+    margin: unset;
+    height: unset;
+    width: 25px;
+    left: 50%;
+    margin-left: -12.5px;
+    margin-top: 10px;
+  }
+}
