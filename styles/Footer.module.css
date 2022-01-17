@@ -1,0 +1,40 @@
+.footer {
+  background-color: #8F9E9E;
+  padding: 70px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+.footerColumn {
+  flex: 0 0 33%;
+}
+.footerColumnRight {
+  text-align: right;
+}
+.footerTitle {
+  font-family: Montserrat;
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.footerText {
+  font-family: Montserrat;
+  color: white;
+  font-weight: 300;
+  padding-top: 5px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+@media (max-width: 600px) {
+  .footer {
+    display: unset;
+    padding: 55px;
+  }
+  .footerColumn {
+      text-align: center;
+      padding-bottom: 20px;
+  }
+}
