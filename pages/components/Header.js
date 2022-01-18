@@ -5,7 +5,7 @@ export default function Header() {
     <div className={styles.header}>
       <img className={styles.logo} src="/logo.png" />
       <div className={styles.icons}>
-        <a href="mailto:avery3ellis@gmail.com">
+        <a href="mailto:avery@averyellisinteriors.com">
           <img className={styles.icon} src="/email_icon.png" />
         </a>
         <a

@@ -13,8 +13,10 @@ export default function Footer() {
       <div className={styles.footerColumn} />
       <div className={`${styles.footerColumn} ${styles.footerColumnRight}`}>
         <div className={styles.footerTitle}>Get in touch</div>
-        <a href="mailto:avery3ellis@gmail.com">
-          <div className={styles.footerText}>E: avery3ellis@gmail.com</div>
+        <a href="mailto:avery@averyellisinteriors.com">
+          <div className={styles.footerText}>
+            E: avery@averyellisinteriors.com
+          </div>
         </a>
       </div>
     </div>
