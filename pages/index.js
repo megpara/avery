@@ -24,9 +24,12 @@ export default function Home() {
         style={{ height: "100%" }}
       >
         <Header />
-        <div className={styles.main}>
-          <div className={styles.subtext}>Website</div>
-          <div className={styles.info}>Coming soon!</div>
+        <div className="flex flex-col justify-center items-center h-1/2">
+          <div className="max-w-md text-center font-thin leading-relaxed italic">
+            Curating a timeless and thoughtful space around your lifestyle. Our
+            mission is to help create a welcoming environment that feels
+            authentic to you.
+          </div>
         </div>
         <Footer />
       </motion.div>
