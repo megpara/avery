@@ -37,3 +37,22 @@ body {
   font-family: "sauvage";
   text-transform: lowercase;
 }
+
+.wrapper {
+  /* padding: 8rem 3rem; */
+  min-height: 70vh;
+}
+
+.headerTitle {
+  font-family: sauvage;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 720px) {
+  .headerTitle {
+    display: none;
+  }
+}

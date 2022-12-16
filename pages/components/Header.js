@@ -1,7 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import styles from "../../styles/Header.module.css";
 import Menu from "./Menu";
 
 export default function Header() {
@@ -11,14 +10,18 @@ export default function Header() {
   };
 
   return (
-    <div className="flex m-8 items-center">
+    <div className="flex p-7 items-center border-b-[0.5px] border-black">
       <div className="basis-1/6">
         <Link href="/">
           <img className="h-[60px] cursor-pointer z-10" src="/logo.png" />
         </Link>
       </div>
       <div className="basis-4/6">
-        <div className={styles.title}>Avery Ellis Interiors</div>
+        <Link href="/">
+          <div className="headerTitle z-10 cursor-pointer">
+            Avery Ellis Interiors
+          </div>
+        </Link>
       </div>
       <div className="flex justify-end basis-1/6">
         {!menuOpen && (

@@ -3,8 +3,6 @@
   padding: 70px;
   width: 100%;
   display: flex;
-  position: absolute;
-  bottom: 0;
 }
 .footerColumn {
   flex: 0 0 33%;

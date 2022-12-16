@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <div className="h-full">
       <Head>
         <title>Avery Ellis</title>
         <meta name="description" content="Avery Ellis" />
