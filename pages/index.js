@@ -7,7 +7,7 @@ import Layout from "./components/Layout";
 export default function Home() {
   return (
     <Layout>
-      {/* <AnimatePresence>
+      <AnimatePresence>
         <motion.div
           className={styles.cover}
           initial={{ opacity: 1 }}
@@ -16,7 +16,7 @@ export default function Home() {
         >
           <img src="/logo.png" />
         </motion.div>
-      </AnimatePresence> */}
+      </AnimatePresence>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
