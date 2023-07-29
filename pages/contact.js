@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <Layout>
       <Header />
-      <div className="wrapper flex justify-center w-full">
+      <div className="wrapper flex justify-center w-full smWrapper">
         <ContactForm />
       </div>
       <Footer />

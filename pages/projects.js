@@ -7,8 +7,12 @@ export default function Projects() {
     <Layout>
       <Header />
       <div className="wrapper flex flex-col justify-center items-center">
-        <div className="max-w-md font-light tracking-[1px] text-center">
-          Please stay tuned to see our latest projects!
+        <div className="max-w-md font-light tracking-[1px] text-center smWrapper">
+          <div className="headerTitle italic !leading-normal pb-4">
+            Please stay tuned to see our latest projects!
+          </div>
+          Projects: Reed, Radde, Scott, Evans, ECH Office, VetWealth Office
+          Remodel, Saul
         </div>
       </div>
       <Footer />

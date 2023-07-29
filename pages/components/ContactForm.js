@@ -9,7 +9,7 @@ const buttonText = {
   ERROR: "Uh oh",
 };
 
-const projectTypes = ["Design", "Example", "Other"];
+const projectTypes = ["Design", "Other"];
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -18,6 +18,8 @@ export default function ContactForm() {
   const [projectType, setProjectType] = useState("");
   const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
+  const [services, setServices] = useState("");
+  const [about, setAbout] = useState("");
 
   const [state, setState] = useState("IDLE");
   const [errorMessage, setErrorMessage] = useState(null);
@@ -34,6 +36,8 @@ export default function ContactForm() {
       projectType,
       location,
       description,
+      services,
+      about,
     };
 
     try {
@@ -129,6 +133,30 @@ export default function ContactForm() {
               setDescription(e.currentTarget.value);
             }}
             name="description"
+            className={styles.inputField}
+          />
+        </div>
+
+        <div className={styles.inputGroup}>
+          <label htmlFor="services">Services needed</label>
+          <textarea
+            rows="10"
+            onChange={(e) => {
+              setServices(e.currentTarget.value);
+            }}
+            name="services"
+            className={styles.inputField}
+          />
+        </div>
+
+        <div className={styles.inputGroup}>
+          <label htmlFor="about">Tell me about you!</label>
+          <textarea
+            rows="10"
+            onChange={(e) => {
+              setAbout(e.currentTarget.value);
+            }}
+            name="about"
             className={styles.inputField}
           />
         </div>

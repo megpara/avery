@@ -29,10 +29,14 @@ export default async (req, res) => {
     <div><strong>Description:</strong></div>
     <div>${req.body.description}</div>
     <br>
+    <div><strong>Services Needed:</strong></div>
+    <div>${req.body.services}</div>
+    <br>
     <div><strong>Customer Info:</strong></div>
     <div>${req.body.name}</div>
     <div>${req.body.email}</div>
-    <div>${req.body.phone}</div>`,
+    <div>${req.body.phone}</div>
+    <div>${req.body.about}</div>`,
   };
 
   transporter.sendMail(mailData, function (err, info) {
