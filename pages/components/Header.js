@@ -1,23 +1,49 @@
-import styles from "../../styles/Header.module.css";
+import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
+import { useState } from "react";
+import Menu from "./Menu";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <div className={styles.header}>
-      <img className={styles.logo} src="/logo.png" />
-      <div className={styles.icons}>
-        <a href="mailto:avery@averyellisinteriors.com">
-          <img className={styles.icon} src="/email_icon.png" />
-        </a>
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/avery-ellis-31b98210a/"
-        >
-          <img className={styles.icon} src="/linkedin2.png" />
-        </a>
+    <div className="flex p-7 items-center border-b-[0.5px] border-black">
+      <div className="basis-1/6">
+        <Link href="/">
+          <img className="h-[60px] cursor-pointer z-10" src="/logo.png" />
+        </Link>
       </div>
-      <div className={styles.headerText}>
-        <div className={styles.title}>Avery Ellis Interiors</div>
+      <div className="basis-4/6">
+        <Link href="/">
+          <div className="headerTitle headerTitleNav z-10 cursor-pointer">
+            Avery Ellis Interiors
+          </div>
+        </Link>
       </div>
+      <div className="flex justify-end basis-1/6">
+        {!menuOpen && (
+          <AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ ease: "easeIn", duration: "1" }}
+              className="z-10 flex"
+            >
+              <button onClick={() => setMenuOpen(!menuOpen)}>
+                <div className="group flex flex-col justify-around h-[25px] w-[35px] items-end">
+                  <span className="h-[1px] w-full bg-black" />
+                  <span className="h-[1px] w-[60%] group-hover:w-full duration-700 bg-black" />
+                  <span className="h-[1px] w-[80%] group-hover:w-full duration-700 bg-black" />
+                </div>
+              </button>
+            </motion.div>
+          </AnimatePresence>
+        )}
+      </div>
+      <Menu open={menuOpen} toggle={toggleMenu} />
     </div>
   );
 }

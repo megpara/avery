@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "sauvage";
   src: url("/Sauvage-Regular.otf");
@@ -7,7 +11,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Montserrat, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   width: 100%;
   height: 100%;
@@ -27,4 +31,32 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+.menu {
+  font-family: "sauvage";
+  text-transform: lowercase;
+}
+
+.wrapper {
+  /* padding: 8rem 3rem; */
+  min-height: 70vh;
+}
+
+.headerTitle {
+  font-family: sauvage;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 720px) {
+  .headerTitleNav {
+    display: none;
+  }
+  .smWrapper {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
