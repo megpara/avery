@@ -18,7 +18,7 @@ export default function Header() {
       </div>
       <div className="basis-4/6">
         <Link href="/">
-          <div className="headerTitle z-10 cursor-pointer">
+          <div className="headerTitle headerTitleNav z-10 cursor-pointer">
             Avery Ellis Interiors
           </div>
         </Link>

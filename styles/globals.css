@@ -52,7 +52,11 @@ body {
 }
 
 @media (max-width: 720px) {
-  .headerTitle {
+  .headerTitleNav {
     display: none;
+  }
+  .smWrapper {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }

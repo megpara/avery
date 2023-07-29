@@ -28,7 +28,7 @@
 }
 @media (max-width: 720px) {
   .footer {
-    display: unset;
+    display: block;
     padding: 55px;
   }
   .footerColumn {

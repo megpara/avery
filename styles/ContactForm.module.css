@@ -50,5 +50,11 @@
       background-color: unset;
       border-radius: 5px;
     }
+    .form input {
+      background-color: white;
+    }
+    .form textarea {
+      background-color: white;
+    }
   }
   
