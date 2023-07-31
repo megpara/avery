@@ -24,21 +24,15 @@ export default function Home() {
         style="flex flex-col justify-between"
       >
         <Header />
-        <div className="">
-          <img
-            className="absolute z-[-20] w-full h-[75vh] top-0 object-cover object-center"
-            src="/index1.png"
-          />
-          <div className="flex flex-col justify-center items-center pt-32">
-            <img className="w-[250px] z-[-10]" src="/headshot2.png" />
-            <div className="max-w-lg text-center italic py-32 smWrapper">
-              <div className="headerTitle !leading-normal pb-4">
-                Curating a timeless and thoughtful space around your lifestyle.
-              </div>
-              <div className="font-light tracking-[1px] leading-relaxed">
-                Our mission is to help create a welcoming environment that feels
-                authentic to you.
-              </div>
+        <div className="flex flex-col justify-center items-center pt-10">
+          <img className="w-[250px]" src="/headshot2.png" />
+          <div className="max-w-lg text-center italic pt-10 pb-12 smWrapper">
+            <div className="headerTitle !leading-normal pb-4">
+              Curating a timeless and thoughtful space around your lifestyle.
+            </div>
+            <div className="font-light tracking-[1px] leading-relaxed">
+              Our mission is to help create a welcoming environment that feels
+              authentic to you.
             </div>
           </div>
         </div>
