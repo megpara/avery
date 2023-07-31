@@ -10,7 +10,7 @@ export default function About() {
         <div className="font-light tracking-[1px] text-center basis-1/2 flex flex-col items-center text-justify">
           <div className="max-w-md">
             <div className="headerTitle italic !text-8xl !leading-normal pb-4 pt-4 md:pt-0">
-              Avery Ellis
+              Avery DeWitt
             </div>{" "}
             graduated from Texas A&M University studying Construction Science
             and Business, then continued to get her master’s degree also from

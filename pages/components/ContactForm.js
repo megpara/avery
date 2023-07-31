@@ -9,7 +9,7 @@ const buttonText = {
   ERROR: "Uh oh",
 };
 
-const projectTypes = ["Design", "Other"];
+const projectTypes = ["New Build", "Remodel", "Other"];
 
 export default function ContactForm() {
   const [name, setName] = useState("");

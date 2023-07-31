@@ -23,7 +23,7 @@
   .submit {
     border: none;
     color: white;
-    background: black;
+    background: #252e3a;
     border-radius: 5px;
     padding: 10px;
     text-transform: uppercase;
@@ -34,7 +34,7 @@
     cursor: pointer;
   }
   .submit:hover {
-    background: #a1af7c;
+    background: #d6cec4;
   }
   .notification {
     font-family: "Work Sans", sans-serif;
