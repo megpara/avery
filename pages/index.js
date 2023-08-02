@@ -21,18 +21,24 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeIn", duration: "2", delay: "2" }}
-        style="flex flex-col justify-between"
       >
         <Header />
-        <div className="flex flex-col justify-center items-center pt-10">
-          <img className="w-[250px]" src="/headshot2.png" />
-          <div className="max-w-lg text-center italic pt-10 pb-12 smWrapper">
-            <div className="headerTitle !leading-normal pb-4">
-              Curating a timeless and thoughtful space around your lifestyle.
+        <div className="bg-[#d6cec4]">
+          <div className="headerTitle !text-lg !leading-normal py-4 border-b-[0.5px] border-black w-full !italic">
+            Curating a timeless and thoughtful space around your lifestyle.
+          </div>
+          <div className="block md:flex items-center smWrapper">
+            <div className="py-8 md:py-0 flex flex-col items-center">
+              <img src="/headshot2.png" />
             </div>
-            <div className="font-light tracking-[1px] leading-relaxed">
-              Our mission is to help create a welcoming environment that feels
-              authentic to you.
+            <div className="font-light tracking-[1px] text-center flex-1 flex flex-col items-center text-center">
+              <div className="max-w-md pb-16 md:pb-0">
+                <div className="headerTitle italic !text-7xl !leading-normal pb-4 pt-4 md:pt-0">
+                  Our Mission
+                </div>{" "}
+                is to help create a welcoming environment that feels authentic
+                to you.
+              </div>
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ export default function Services() {
       <Header />
       <div className="wrapper flex flex-col justify-center items-center">
         <div className="max-w-lg font-light tracking-[1px] text-justify smWrapper">
-          <div className="headerTitle italic !text-6xl !leading-normal pb-4">
+          <div className="headerTitle italic !text-5xl !leading-normal md:!text-6xl md:!leading-normal pb-4">
             Avery Ellis Interiors
           </div>{" "}
           offers a variety of services depending on the project and clients’
