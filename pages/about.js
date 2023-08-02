@@ -14,7 +14,7 @@ export default function About() {
             </div>{" "}
             graduated from Texas A&M University studying Construction Science
             and Business, then continued to get her master’s degree also from
-            Texas A&M. While always having a passion for design, she perused it
+            Texas A&M. While always having a passion for design, she persued it
             full time starting in 2021. She specializes in residential
             construction in the central Texas region but loves any project that
             welcomes creativity!
