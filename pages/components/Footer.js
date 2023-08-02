@@ -10,7 +10,7 @@ export default function Footer() {
           Design | Remodel | Furnishings | Decoration
         </div>
       </div>
-      <div className="basis-1/2 md:text-right text-center md:pt-0 pt-4">
+      <div className="basis-1/2 md:text-right text-center md:pt-0 pt-4 z-10">
         <div className={styles.footerTitle}>Get in touch</div>
         <a href="mailto:avery@averyellisinteriors.com">
           <div className={styles.footerText}>
